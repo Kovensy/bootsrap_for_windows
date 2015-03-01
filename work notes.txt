@@ -1,0 +1,46 @@
+C:\Phenix\Dev\phenix_build\bin\python.bat "C:\Program Files (x86)\JetBrains\PyCharm 4.0.4\helpers\pydev\pydevd.py" --multiproc --client 127.0.0.1 --port 49677 --file "C:/Phenix/Current version/bootstrap.py" --builder=phenix --cciuser=youval base
+pydev debugger: process 3416 is connecting
+
+Connected to pydev debugger (build 139.1001)
+Performing actions: base
+===== Running in .: python modules\cctbx_project\libtbx\auto_build\install_base_packages.py --python-shared --skip-if-exists --all
+
+  ****************************************************************************
+                 Automated CCTBX dependencies build script
+                 report problems to cctbx-dev@cci.lbl.gov
+  ****************************************************************************
+
+Setting up directories...
+  creating C:\Phenix\Current version\junk\base_tmp
+  creating C:\Phenix\Current version\junk\base
+Building dependencies: python numpy cython hdf5 setuptools pip biopython sphinx docutils pyopengl misc png freetype matplotlib wxpython
+
+--------------------------------------------------------------------------------
+
+Installing Python...
+  log file is C:\Phenix\Current version\junk\base_tmp\Python_install_log
+  getting package Python-2.7.8_cci.tar.gz...
+    downloading from http://cci.lbl.gov/cctbx_dependencies : 14.3 MB
+    [0%.........20%.........40%.........60%.........80%.........100%]
+  installing Python-2.7.8_cci.tar.gz...
+pkg_name C:\Phenix\Current version\junk\base_tmp\Python-2.7.8_cci.tar.gz
+Traceback (most recent call last):
+  File "modules\cctbx_project\libtbx\auto_build\install_base_packages.py", line 1032, in <module>
+    installer(args=sys.argv, log=sys.stdout)
+  File "modules\cctbx_project\libtbx\auto_build\install_base_packages.py", line 147, in __init__
+dir_name C:\Phenix\Current version\junk\base_tmp\Python-2.7.8_cci
+    self.build_dependencies(packages=packages)
+args ['C:\\Phenix\\Current version\\junk\\base_tmp\\Python-2.7.8_cci\\configure', '--prefix', 'C:\\Phenix\\Current version\\junk\\base', '--enable-shared', 'LDFLAGS=-Wl,-rpath=\\$$ORIGIN/../lib']
+  File "modules\cctbx_project\libtbx\auto_build\install_base_packages.py", line 470, in build_dependencies
+    getattr(self, 'build_%s'%i)()
+  File "modules\cctbx_project\libtbx\auto_build\install_base_packages.py", line 516, in build_python
+    shell=False)
+  File "modules\cctbx_project\libtbx\auto_build\install_base_packages.py", line 229, in call
+    return call(args, log=log, verbose=self.verbose, **kwargs)
+  File "C:\Phenix\Current version\junk\modules\cctbx_project\libtbx\auto_build\installer_utils.py", line 57, in call
+    close_fds=False)
+  File "c:\python27\lib\subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "c:\python27\lib\subprocess.py", line 958, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
