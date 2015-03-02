@@ -1,3 +1,13 @@
+TO-DO
+-----
+Need to replace the winScp with pscp, to eliminate the need for winScp and to make the solution cleaner
+
+
+Current bugs
+------------
+while running:  python bootstrap.py --builder=... --cciuser=... base
+I get
+
 C:\Phenix\Dev\phenix_build\bin\python.bat "C:\Program Files (x86)\JetBrains\PyCharm 4.0.4\helpers\pydev\pydevd.py" --multiproc --client 127.0.0.1 --port 49677 --file "C:/Phenix/Current version/bootstrap.py" --builder=phenix --cciuser=youval base
 pydev debugger: process 3416 is connecting
 
